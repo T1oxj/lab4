@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Адміністрування товарів</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>Адміністрування товарів</h1>
+    <input type="text" id="search" placeholder="Пошук товарів...">
+    <table id="productsTable">
+        <thead>
+            <tr>
+                <th>Назва</th>
+                <th>Ціна</th>
+                <th>Опис</th>
+                <th>Рейтинг</th>
+                <th>Дата додавання</th>
+                <th>Зображення</th>
+                <th>Дії</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <h2>Додати новий товар</h2>
+    <form id="addProductForm">
+        <input type="text" id="name" placeholder="Назва" required>
+        <input type="number" id="cost" placeholder="Ціна" required>
+        <textarea id="description" placeholder="Опис" required></textarea>
+        <input type="number" id="rate" placeholder="Рейтинг" required>
+        <input type="date" id="date" required>
+        <input type="text" id="image" placeholder="Шлях до зображення" required>
+        <button type="submit">Додати товар</button>
+    </form>
+    <script src="admin-script.js"></script>
+</body>
+
+</html>
